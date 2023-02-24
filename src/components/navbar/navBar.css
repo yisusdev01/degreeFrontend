@@ -1,0 +1,77 @@
+.navBar{
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(3px);
+    min-height: 10vh;
+    top:0;
+    left:78px;
+    width: calc(100% - 78px);
+    transition: all .5s ease;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+.navBar .icon{
+    color: black;
+    margin: 0 15px;
+    font-size: 25px;
+    border-radius: 50%;
+    padding: 0 8px;
+    transition: all .5s ease;
+ }
+.navBar .icon:hover{
+    background: white;
+ }
+  
+.navBar .userSection{
+    display: flex;
+    align-items: center;
+ }
+.navBar .iconUser{
+    color: rgb(45, 66, 185);
+    margin: 0 15px;
+    font-size: 35px;
+ }
+.navBar .iconBell{
+    color: rgb(45, 66, 185);
+    margin: 0 15px;
+    font-size: 25px;
+ }
+
+.ContainerMenuUser{
+    position: fixed;
+    top:9vh;
+    right: 35px;
+    width: 150px;
+    border-radius: 15% 0% 15% 15%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.575);
+    padding: 15px;
+    z-index: 15;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+}
+.ContainerMenuUser hr{
+    margin: 5px;
+}
+.ContainerMenuUser .menuUser{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 10px;
+}
+.ContainerMenuUser .menuUser a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all .5s ease;
+
+}
+.ContainerMenuUser .menuUser a:hover{
+    background-color:rgba(0, 0, 0, 0.164);
+    transition: all .5s ease;
+}

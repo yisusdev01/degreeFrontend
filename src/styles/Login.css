@@ -1,0 +1,11 @@
+.LoginContainer {
+    display: grid;
+    grid-template-columns:repeat(2, 50%);
+    height: 100vh;
+}
+.col{
+    display: flex;
+    background-color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+}

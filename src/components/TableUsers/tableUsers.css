@@ -1,0 +1,90 @@
+/*--------------------TABLE USER--------------------*/
+
+.tableUsers{
+    justify-self: center;
+    width: calc(100% - 25px);
+    margin-bottom: 20px;
+}
+
+
+/*--------------------NAV TABLE--------------------*/
+
+.navTableContainer{
+    background: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.itemNavTable{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-bottom: 0;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer ;
+    background-color: #a1b7ff;
+    transition: all .5s ease;
+}
+.itemNavTable.active{
+    background-color: #003BFF;
+    color: white;
+    transition: all .5s ease;
+}
+
+.itemNavTable:hover{
+    background-color: #003BFF;
+    color: white;
+    transition: all .5s ease;
+}
+
+
+/*--------------------TABLE--------------------*/
+
+.tableContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*--------------------TITTLE TABLE--------------------*/
+
+
+.rowTableContainer{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.rowTableContainer.active {
+    grid-template-columns: repeat(6, 1fr);
+}
+.rowTable{
+    display: flex;
+}
+.rowTableItem{
+    flex-grow: 1;
+    padding: 5px;
+    text-align: center;
+    padding: 10px;
+}
+.rowTableItem.tittle{
+    color: white;
+    background-color: black;
+}
+.rowTableItem.text{
+    color: black;
+    background-color: white;
+}
+.rowTableItem.text.alter{
+    color: black;
+    background-color: rgb(201, 201, 201);
+}
+
+
+
+/*--------------------Data TABLE--------------------*/
+
+
+.dataTableItem{
+    padding: 5px;
+    border: 1px solid black;
+}
